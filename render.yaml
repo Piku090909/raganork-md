@@ -1,0 +1,37 @@
+services:
+  - type: web
+    name: MASTER-MIND-V3
+    env: node
+    branch: main
+    repo: https://github.com/Master-hacker-india/MASTER-MIND-V3
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    autoDeploy: false
+    envVars:
+      - key: SESSION_ID
+        sync: false
+      - key: BOT_INFO
+        value: false
+      - key: WARN_COUNT
+        value: 3
+      - key: AUTO_STATUS_VIEWS
+        value: false
+      - key: MEDIA_DATA
+        value: false
+      - key: HANDLER
+        value: .
+      - key: WORK_TYPE
+        value: private
+      - key: SERVER
+        value: render
+      - key: STICKER_PACKNAME
+        value: false
+      - key: AUDIO_DATA
+        value: false
+      - key: SUDO
+        value: 918536881026
+      - key: SERVERURL
+        value:
+      - key: DATABASE_URL
+        sync: false
