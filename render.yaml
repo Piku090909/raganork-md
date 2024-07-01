@@ -1,37 +1,29 @@
 services:
   - type: web
-    name: MASTER-MIND-V3
+    name: raganork-md
     env: node
     branch: main
-    repo: https://github.com/Master-hacker-india/MASTER-MIND-V3
+    repo: https://github.com/souravkl11/raganork-md
     buildCommand: npm install
     startCommand: npm start
     plan: free
     autoDeploy: false
     envVars:
-      - key: SESSION_ID
+      - key: SESSION
         sync: false
+      - key: MODE
+        value: false
+      - key: PORT
+        value: 3000
+      - key: SUDO
+        value: false
+      - key: ALIVE
+        value: false
+      - key: CHATBOT
+        value: false
       - key: BOT_INFO
         value: false
-      - key: WARN_COUNT
-        value: 3
-      - key: AUTO_STATUS_VIEWS
-        value: false
-      - key: MEDIA_DATA
-        value: false
-      - key: HANDLER
+      - key: HANDLERS
         value: .
-      - key: WORK_TYPE
-        value: private
-      - key: SERVER
-        value: render
-      - key: STICKER_PACKNAME
+      - key: STICKER_DATA
         value: false
-      - key: AUDIO_DATA
-        value: false
-      - key: SUDO
-        value: 918536881026
-      - key: SERVERURL
-        value:
-      - key: DATABASE_URL
-        sync: false
