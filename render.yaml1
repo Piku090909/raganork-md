@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: raganork-md
+    env: node
+    branch: main
+    repo: https://github.com/souravkl11/raganork-md.git
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    autoDeploy: false
+    envVars:
+      - key: ALIVE
+        sync: false
+      - key: BOT_INFO
+        value: true
+      - key: CHATBOT
+        value: false
+      - key: HANDLERS
+        value: false
+      - key: MODE
+        value: false
+      - key: PORT
+        value: false
+      - key: SESSION
+        value: false
+      - key: STICKER_DATA
+        value: false
+      - key: SUDO
+        value: false
