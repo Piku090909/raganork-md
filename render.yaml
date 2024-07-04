@@ -20,7 +20,7 @@ services:
       - key: MODE
         value: false
       - key: PORT
-        value: false
+        value: 3000
       - key: SESSION
         value: false
       - key: STICKER_DATA
