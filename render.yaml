@@ -3,13 +3,13 @@ services:
     name: raganork-md
     env: node
     branch: main
-    repo: https://github.com/souravkl11/raganork-md.git
+    repo: https://github.com/Piku090909/raganork-md.git
     buildCommand: npm install
     startCommand: npm start
     plan: free
     autoDeploy: false
     envVars:
-      - key: ALIVE
+      - key: SESSION
         sync: false
       - key: BOT_INFO
         value: true
@@ -21,7 +21,7 @@ services:
         value: false
       - key: PORT
         value: 3000
-      - key: SESSION
+      - key: ALIVE
         value: false
       - key: STICKER_DATA
         value: false
